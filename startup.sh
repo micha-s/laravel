@@ -4,7 +4,7 @@ sed -i -e 's/root \/home\/site\/wwwroot;/root \/home\/site\/wwwroot\/public;/g' 
  
 echo "Reloading nginx to apply new configuration"
 service nginx reload
-
+ 
 # needed first time deploy:
 # cd /home/site/wwwroot && cp -n .env.example .env 
 # php artisan key:generate
